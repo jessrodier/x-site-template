@@ -2,21 +2,61 @@
 @use 'settings' as *;
 @use 'variables' as *;
 
-// Rye
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-// font-family: 'Rye', cursive;
-
-// Roboto Slab - Serif Font
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
-// font-family: 'Roboto Slab', serif;
-
-// CUSTOM - FortDeath
+// Protest Strike
 @font-face {
-font-family: "TodoCustom";
-  src: url("../vendor/fonts/FortDeath/FortDeath-Eroded.eot");
-  src: url("../vendor/fonts/FortDeath/FortDeath-Eroded.woff") format("woff");
+  font-family: "Protest_Strike";
+  font-style: normal;
+  src: url("../vendor/fonts/Protest_Strike/ProtestStrike-Regular.ttf") format("truetype");
 }
-// font-family: 'TodoCustom', sans-serif;
+// font-family: 'Protest_Strike', sans-serif;
+
+// Lexend
+@font-face {
+  font-family: "Lexend Thin";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend SemiBold";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend Medium";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend Light";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend ExtraLight";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend ExtraBold";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend Bold";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend Black";
+  font-style: normal;
+  src: url("/assets/fonts/Lexend/Lexend-Black.ttf") format("truetype");
+}
+// font-family: 'Lexend', sans-serif;
 
 // Variables
 // $baseFontSize: 16px;
@@ -25,8 +65,8 @@ font-family: "TodoCustom";
 :root {
   // Font Families
   --font-family-todo: 'TodoCustom', sans-serif;
-  --font-family-headings: 'Rye', cursive;
-  --font-family-text: 'Roboto Slab', serif;
+  --font-family-headings: 'Protest_Strike', sans-serif;
+  --font-family-text: 'Lexend', serif;
 
   // Font Size
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);

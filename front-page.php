@@ -39,7 +39,7 @@
       <a href="/events" id="events" class="btn btn-secondary mx-0 mb-3">view all &raquo;</a>
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-          <a href="<?php the_permalink(); ?>" class="card no-thumb <?php echo $isToday; ?>">
+          <a href="<?php the_permalink(); ?>" class="card no-thumb">
             <div class="card-body centered">
               <h5 class="card-title">Card Title</h5>
               <p class="card-meta mb-0">Jan. 1st, 2099</p>

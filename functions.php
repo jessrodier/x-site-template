@@ -19,11 +19,6 @@ function registerStylesAndScripts()
 
   wp_enqueue_style('main', get_template_directory_uri() . '/styles/main.css');
 
-  wp_enqueue_style(
-    'holiday',
-    get_template_directory_uri() . '/styles/holiday.css'
-  );
-
   // Page-Based Stylesheets
   // wp_register_style( 'homepage', get_template_directory_uri() . '/styles/main.css' );
 
@@ -56,7 +51,7 @@ function brandLoginPage()
         background: #18212b !important;
       }
       body.login div#login h1 a {
-        background-image: url(https://www.wilsonfamilychiropracticcenter.net/wp-content/uploads/2018/12/placeholder-logo-2.png);
+        background-image: url(https://www.todo.com/background.png);
         background-color: transparent;
         background-size: contain;
         width: 100%;

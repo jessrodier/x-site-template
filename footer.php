@@ -36,9 +36,7 @@
         </div>
       </div>
       <div class="col-12 justify-content-between text-center py-2">
-        <p>&copy;TODO - <?php echo date('Y'); ?>&nbsp;<?php echo get_bloginfo(
-  'name'
-); ?>. All Rights Reserved. | Website handcrafted with <span title="love">❤️</span> by Jess.</p>
+        <p>&copy;TODO - <?php echo date('Y'); ?>&nbsp;<?php echo get_bloginfo('name'); ?>. All Rights Reserved. | Website handcrafted with <span title="love">❤️</span> by Jess.</p>
       </div>
     </div>
 
