@@ -1,0 +1,34 @@
+@use '../base/index' as *;
+
+// Back to Top Link
+#back-to-top {
+  a {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $white;
+    position: fixed;
+    background-color: $black75;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    bottom: 1rem;
+    right: 1rem;
+    transition: all 0.25s;
+    &:focus,
+    &:hover {
+      color: $secondary;
+      transition: all 0.25s;
+      box-shadow: $shadow--md;
+    }
+    &:focus {
+      box-shadow: $shadow--focus;
+      outline: none;
+      border: none;
+    }
+  }
+  span {
+    font-size: 0.85rem;
+  }
+}

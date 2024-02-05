@@ -1,0 +1,35 @@
+@use '../base/index' as *;
+
+#splashScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  background: $black;
+  color: $white;
+  z-index: 5000;
+  transition: all 1s ease;
+  &.done {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2.5s ease;
+  }
+}
+
+#splashContent {
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 3rem;
+  font-weight: 900;
+  // visibility: hidden;
+  // opacity: 0;
+  transition: all 3s ease;
+  &.fade {
+    visibility: visible;
+    opacity: 1;
+    transition: all 3s ease;
+  }
+}

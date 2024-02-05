@@ -1,0 +1,52 @@
+﻿@use '../base/index' as *;
+
+.dropdown-menu {
+    user-select: none;
+    .dropdown-label {
+        padding: 0.5rem 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dropdown-list {
+        display: none;
+        position: absolute;
+        background: white;
+        color: black;
+        border: 0.1rem solid $lighter-gray;
+        z-index: 1000;
+        a {
+            color: $black !important;
+        }
+    }
+    .dropdown-heading {
+        padding: 0.25rem;
+        color: $primary;
+        font-size: 0.9rem;
+        font-weight: 700;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: space-between;
+        &:hover {
+            cursor: default;
+        }
+    }
+    .dropdown-item {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        &:hover {
+            background-color: $almost-white;
+            cursor: pointer;
+        }
+        a {
+            width: 100%;
+            display: block;
+            padding: 0.5rem;
+            margin: -0.5rem 0;
+        }
+    }
+}

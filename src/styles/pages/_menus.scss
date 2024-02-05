@@ -1,0 +1,49 @@
+@use '../base/index' as *;
+
+#menus {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  
+  section {
+    padding: 1.5rem 0;
+  }
+
+  .content-block {
+    text-align: center;
+  }
+}
+
+.menu-item {
+  margin: 0.5rem 0;
+//   .attr {
+//     font-size: 1rem;
+//     position: relative;
+//     top: -0.5rem;
+//   }
+//   p {
+//     margin: 0;
+//   }
+}
+
+// #menus {
+//   .extra {
+//     margin: 1rem 0 0 0;
+//     text-align: center;
+//     h6 {
+//       margin: 0;
+//     }
+//     p {
+//       font-size: 1.25rem;
+//       margin: 0;
+//     }
+//   }
+// }
+
+// #menuFooter {
+//   p {
+//     font-size: 1.15rem;
+//   }
+// }

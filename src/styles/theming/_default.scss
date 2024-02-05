@@ -1,0 +1,37 @@
+@use '../base/index' as *;
+
+.fixed-header {
+  article,
+  .sidebar {
+    margin-top: $header-height;
+  }
+}
+
+article {
+  &#main {
+    padding: 2rem 2rem 5rem;
+    @media only screen and (max-width: 875px) {
+      padding: 1.5rem 1rem 3rem;
+    }
+  }
+  &.white-bg {
+    background-color: $article-bg;
+  }
+}
+
+// Edit This Link
+.post-edit-link {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-sm);
+  position: absolute;
+  left: calc(50vw - 2.5rem);
+  width: 5rem;
+  border-bottom: none;
+  margin-top: -0.75rem;
+  &::before {
+    content: '(';
+  }
+  &::after {
+    content: ')';
+  }
+}

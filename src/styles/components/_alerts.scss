@@ -1,0 +1,44 @@
+﻿@use '../base/index' as *;
+
+.alert {
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-width: 0 0 0 6px;
+  border-style: solid;
+  border-color: $black;
+  background-color: $lighter-gray;
+  border-radius: 3px;
+  box-sizing: border-box;
+  &.alert-success {
+    background-color: $success-bg;
+    color: darken($success, 20%);
+    border-color: $success;
+  }
+  &.alert-warning {
+    background-color: $warning-bg;
+    color: darken($warning, 25%);
+    border-color: $yellow;
+  }
+  &.alert-danger {
+    background-color: $danger-bg;
+    color: darken($danger, 20%);
+    border-color: $danger;
+  }
+}
+
+.field-alert {
+  height: 1rem;
+  padding: 0.25rem;
+  &.alert-success {
+    color: $success;
+  }
+  &.alert-warning {
+    color: $warning;
+  }
+  &.alert-danger {
+    color: $danger;
+  }
+}

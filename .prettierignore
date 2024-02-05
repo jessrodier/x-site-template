@@ -1,0 +1,12 @@
+# Folders
+node_modules
+styles
+scripts
+assets
+
+# Files
+.gitignore
+LICENSEd
+package.json
+package-lock.json
+README.md

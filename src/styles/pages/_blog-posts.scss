@@ -1,0 +1,15 @@
+@use '../base/index' as *;
+
+// Single
+.post-meta {
+  margin-bottom: 1rem;
+  strong {
+    font-weight: 600;
+  }
+}
+
+#post-page {
+  h5 {
+    margin-top: 1.25rem;
+  }
+}

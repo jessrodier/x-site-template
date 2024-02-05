@@ -1,0 +1,45 @@
+﻿@use '../base/index' as *;
+
+.pill {
+  @include row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.9rem;
+  background-color: $lighter-gray;
+  border-radius: 1rem;
+  margin: 0.25rem;
+  > * {
+    height: auto;
+  }
+  .remove {
+    margin: 0 -0.5rem 0 0.5rem;
+    width: 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: $anchor;
+    transition: all 0.15s ease;
+    &:hover {
+      color: $black;
+      font-size: 1.15rem;
+      transition: all 0.15s ease;
+      margin-bottom: -0.15rem;
+    }
+  }
+  &.sm {
+    width: 2rem;
+    padding: 0.2rem;
+  }
+  .pill-gf {
+    background-color: $success;
+    &::after {
+      content: "GF";
+      display: block;
+    }
+  }
+  .pill-vg::after {
+    content: "VG";
+    display: block;
+  }
+}

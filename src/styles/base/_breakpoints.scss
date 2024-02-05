@@ -1,0 +1,50 @@
+// Media Queries
+@mixin media-breakpoint($sizes...) {
+  @each $size in $sizes {
+    @if $size == sm {
+      @media only screen and (max-width: 576px) {
+        @content();
+      }
+    }
+    @if $size == md {
+      @media only screen and (max-width: 768px) {
+        @content();
+      }
+    }
+    @if $size == lg {
+      @media only screen and (max-width: 992px) {
+        @content();
+      }
+    }
+    @if $size == xl {
+      @media only screen and (max-width: 1200px) {
+        @content();
+      }
+    }
+    @if $size == xxl {
+      @media only screen and (max-width: 1400px) {
+        @content();
+      }
+    }
+  }
+}
+
+
+// Usage
+body {
+  @include media-breakpoint(xxl) {
+    // font-size: 10px;
+  }
+  @include media-breakpoint(xl) {
+    // font-size: 12px;
+  }
+  @include media-breakpoint(lg) {
+    // font-size: 10px;
+  }
+  @include media-breakpoint(md) {
+    // font-size: 12px;
+  }
+  @include media-breakpoint(sm) {
+    // font-size: 10px;
+  }
+}

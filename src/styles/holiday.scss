@@ -1,0 +1,97 @@
+@use 'base/index' as *;
+
+// Stylesheet for fun holiday styles
+
+// *** St. Patty's Day ***
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+// font-family: 'MedievalSharp', cursive;
+:root {
+  --irish-green: #00843e;
+  --irish-orange: #e69138;
+  --irish-font: 'MedievalSharp', cursive;
+}
+
+.irish-green-text {
+  color: var(--irish-green) !important;
+}
+
+.irish-orange-text {
+  color: var(--irish-orange) !important;
+}
+
+.irish-font-family {
+  font-family: var(--irish-font) !important;
+  font-weight: 800 !important;
+}
+
+.irish-theme {
+  font-family: var(--irish-font) !important;
+  font-weight: 800 !important;
+
+  h1,
+  .h1,
+  h3,
+  .h3,
+  h6,
+  .h6 {
+    color: var(--irish-green) !important;
+  }
+
+  h2,
+  .h2,
+  h5,
+  .h5 {
+    color: var(--irish-orange) !important;
+  }
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6,
+  p,
+  a,
+  ul,
+  .sub-title,
+  .title-accent,
+  .wp-google-time,
+  .wp-google-text {
+    font-family: var(--irish-font) !important;
+    font-weight: 800 !important;
+  }
+
+  .title-accent {
+    color: var(--irish-orange) !important;
+  }
+
+  .btn {
+    &.btn-secondary {
+      background-color: var(--irish-orange) !important;
+      color: $black !important;
+      border-color: var(--irish-orange) !important;
+      &:hover,
+      &:focus {
+        background-color: var(--irish-green) !important;
+        color: $white !important;
+        border-color: var(--irish-green) !important;
+      }
+    }
+    &.btn-outline-secondary {
+      // background-color: var(--irish-orange) !important;
+      // color: $black !important;
+      &:hover,
+      &:focus {
+        background-color: var(--irish-orange) !important;
+        color: $black !important;
+        border-color: var(--irish-orange) !important;
+      }
+    }
+  }
+}

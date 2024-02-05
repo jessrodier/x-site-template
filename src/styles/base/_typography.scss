@@ -1,0 +1,147 @@
+﻿@use 'breakpoints' as *;
+@use 'settings' as *;
+@use 'variables' as *;
+
+// Rye
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+// font-family: 'Rye', cursive;
+
+// Roboto Slab - Serif Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+// font-family: 'Roboto Slab', serif;
+
+// CUSTOM - FortDeath
+@font-face {
+font-family: "TodoCustom";
+  src: url("../vendor/fonts/FortDeath/FortDeath-Eroded.eot");
+  src: url("../vendor/fonts/FortDeath/FortDeath-Eroded.woff") format("woff");
+}
+// font-family: 'TodoCustom', sans-serif;
+
+// Variables
+// $baseFontSize: 16px;
+
+// Font Variables
+:root {
+  // Font Families
+  --font-family-todo: 'TodoCustom', sans-serif;
+  --font-family-headings: 'Rye', cursive;
+  --font-family-text: 'Roboto Slab', serif;
+
+  // Font Size
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1rem, 0.61vw + 1.1rem, 1.25rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(5.5rem, 3.54vw + 2.17rem, 8rem);
+}
+
+html, 
+body {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-base);
+  color: $black;
+}
+
+h1 {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  margin: 1rem 0;
+  line-height: 0.75;
+}
+
+h2 {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-xxl);
+  font-weight: 200;
+  margin: 0.75rem 0;
+  text-transform: uppercase;
+  color: #B87333;
+}
+
+h3 {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-xl);
+  font-weight: 200;
+  margin: 0.5rem 0;
+}
+
+h4 {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-lg);
+  font-weight: 200;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+  color: #B87333;
+}
+
+h5 {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-md);
+  font-weight: 200;
+  margin: 0;
+  text-transform: uppercase;
+  color: #B87333;
+}
+
+.h5 {
+  font-family: var(--font-family-headings) !important;
+  font-size: var(--font-size-md) !important;
+  font-weight: 200 !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  color: #B87333 !important;
+}
+
+h6 {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-base);
+  font-weight: 200;
+  margin: 0;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.h6 {
+  font-family: var(--font-family-headings) !important;
+  font-size: var(--font-size-base) !important;
+  font-weight: 200 !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  color: $black !important;
+}
+
+p {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-base);
+  color: $black;
+  margin: 0.25rem 0 0.5rem 0;
+  &.small {
+    font-size: var(--font-size-sm);
+  }
+}
+
+.small {
+  font-size: var(--font-size-sm);
+}
+
+.subtitle {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: $dark-gray;
+  margin: 0 0 1rem 0;
+}
+
+
+// Helper Classes
+.text-center {
+  text-align: center !important;
+}
+
+.secondary-text {
+  color: $secondary !important;
+}

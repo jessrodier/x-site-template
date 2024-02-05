@@ -1,0 +1,49 @@
+@use '../base/index' as *;
+
+// Page w/Sidebar
+.has-sidebar {
+  display: flex;
+  flex-flow: row nowrap;
+  aside {
+    display: block;
+    min-width: 20rem;
+    min-height: 100vh;
+    background-color: $almost-white;
+    padding: 2rem 1rem;
+    @media only screen and (max-width: 875px) {
+      min-width: 15rem;
+    }
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+  main {
+    background-color: $white;
+    width: 100%;
+    padding: 0 2rem;
+    @media only screen and (max-width: 600px) {
+      padding: 0 1rem;
+    }
+  }
+}
+
+.sidebar-nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      padding: 0.1rem 0;
+      a {
+        font-size: 1.15rem;
+        border-bottom: none;
+        width: 100%;
+        padding: 0.25rem 1rem;
+        display: block;
+        &:hover {
+          background-color: $black5;
+        }
+      }
+    }
+  }
+}

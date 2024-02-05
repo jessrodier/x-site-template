@@ -1,0 +1,240 @@
+﻿@use '../base/index' as *;
+
+form {
+  user-select: none;
+  // Form Themes
+  &.embedded-labels { // labels embeded in top border of field
+    label {
+      position: absolute;
+      background-color: $white;
+      color: $dark-gray;
+      padding: 0 0.25rem;
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      margin: -0.5rem 0 0 0.5rem;
+      transition: all 0.25s ease;
+    }
+    .check-group {
+      input[type="checkbox"] {
+        margin: 0;
+      }
+      label {
+        position: relative;
+        font-size: var(--font-size-base);
+        margin: -0.15rem 0.5rem 0 0.5rem;
+        font-weight: 400;
+        background-color: transparent;
+      }
+    }
+    .radio-group {
+      input[type="radio"] {
+        margin: 0;
+      }
+      label {
+        position: relative;
+        font-size: var(--font-size-base);
+        margin: -0.15rem 0.5rem 0 0.5rem;
+        font-weight: 400;
+        background-color: transparent;
+      }
+    }
+  }
+  &.floating-labels {
+    .form-group {
+      &.filled,
+      &:focus-within { // doesn't work in IE
+        label {
+          top: 0rem;
+          left: 0rem;
+          transition: all 0.25s ease;
+        }
+      }
+    }
+    label {
+      position: relative;
+      font-size: var(--font-size-sm);
+      transition: all 0.25s ease;
+      top: 1.75rem;
+      left: 0.5rem;
+    }
+    .check-group {
+      input[type="checkbox"] {
+        margin: 0;
+      }
+      label {
+        position: relative;
+        font-size: var(--font-size-base);
+        margin: -0.15rem 0.5rem 0 0.5rem;
+        font-weight: 400;
+        background-color: transparent;
+      }
+    }
+    .radio-group {
+      input[type="radio"] {
+        margin: 0;
+      }
+      label {
+        position: relative;
+        font-size: var(--font-size-base);
+        margin: -0.15rem 0.5rem 0 0.5rem;
+        font-weight: 400;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.form-status {
+    display: none;
+    padding: 0 0.5rem;
+}
+
+.form-row {
+  @include flex-row;
+}
+
+.form-group {
+  @include flex-column;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  flex: 1 0 0%;
+}
+
+.check-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  input[type="checkbox"] {
+    margin: 0;
+  }
+  label {
+    font-size: var(--font-size-base);
+    margin: -0.15rem 0.5rem 0 0.5rem;
+  }
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  input[type="radio"] {
+    margin: 0;
+  }
+  label {
+    font-size: var(--font-size-base);
+    margin: -0.15rem 0.5rem 0 0.5rem;
+  }
+}
+
+.group-container {
+  border: 1px solid $lighter-gray;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.btn-row {
+  @include flex-row;
+  margin: 1rem 0;
+  .btn-right {
+    margin-left: auto;
+  }
+}
+
+label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: $black;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+select {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  background-color: $white;
+  border: 1px solid $light-gray;
+  margin: 1px;
+  padding: 0.5rem;
+  border-radius: 3px;
+  outline: transparent;
+  min-width: 20rem;
+  &:focus,
+  &:active {
+    outline: transparent;
+    box-shadow: 0 0 0 2px $focus;
+  }
+  &.xs {
+    min-width: 5rem;
+  }
+  &.sm {
+    min-width: 15rem;
+  }
+  &.lg {
+    min-width: 30rem;
+  }
+}
+
+textarea {
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.75rem;
+  height: 7rem;
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0 2px $focus;
+    margin: 0;
+    outline: none;
+  }
+}
+
+select {
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field-hint {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: $gray;
+}
+
+.field-error {
+  font-size: 0.9rem;
+  color: $danger;
+}
+
+
+// Form Mods
+.required {
+  label::after {
+    content: "*";
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    margin-left: 0.1rem;
+    color: $danger;
+  }
+}
+
+.invalid {
+  input[type='text'],
+  input[type='tel'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password'],
+  textarea,
+  select {
+    border: 1px solid $danger;
+  }
+}

@@ -1,0 +1,37 @@
+﻿@use 'breakpoints' as *;
+@use 'settings' as *;
+
+@mixin flex-column { // use when you want a column
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row { // use when you want it to wrap
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin row { // use when you don't want it to wrap
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition-fast {
+  transition: all .2s ease;
+}
+
+@mixin transition-mid {
+  transition: all .3s ease;
+}
+
+@mixin transition-slow {
+  transition: all .5s ease;
+}

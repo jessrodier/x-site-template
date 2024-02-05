@@ -1,0 +1,103 @@
+﻿@use '../base/index' as *;
+
+// all anchor tags across site - using border bottom instead of underline
+// for better usability.
+a {
+    color: $anchor;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid $anchor;
+    padding: 0 0.15rem;
+    @include transition-mid;
+    &:hover,
+    &:focus {
+        @include transition-mid;
+        color: $black;
+        background-color: $highlight;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom-style: dotted;
+        outline: none;
+    }
+    &:focus {
+        box-shadow: 0 0 0 3px $focus;
+    }
+}
+
+// modifier for anchor tags in a container with the .dark class.
+.dark-bg {
+  a {
+    color: $secondary;
+    border-color: $secondary;
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+  }
+}
+
+// unstyled anchor tag(s) - add this class to any container wrapping links
+// that you don't want to be underlined, such as the navigation.
+.us-anchor {
+    a {
+        padding: 0;
+        font-weight: unset;
+        text-decoration: none;
+        border-bottom: none;
+        transition: none;
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            text-decoration: none;
+            border-bottom: none;
+            transition: none;
+        }
+    }
+}
+
+a {
+    &.us-anchor {
+        padding: 0;
+        font-weight: unset;
+        text-decoration: none;
+        border-bottom: none;
+        transition: none;
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            text-decoration: none;
+            border-bottom: none;
+            transition: none;
+        }
+    }
+}
+
+.dropdown-heading {
+    a {
+        border-bottom: 1px solid $anchor !important;
+        &:hover,
+        &:focus {
+            color: $black;
+            background-color: $highlight;
+            border-bottom-style: dotted !important;
+        }
+    }
+}
+
+
+.social-links {
+  .social {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    background: transparent;
+    color: $tertiary !important;
+    @include transition-mid;
+    &:focus,
+    &:hover {
+      color: $white !important;
+      background: transparent !important;
+      @include transition-mid;
+    }
+  }
+}

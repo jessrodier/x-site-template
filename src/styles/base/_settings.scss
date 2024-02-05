@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+// Brand Colors
+// $primary: $midnight;
+$primary: $black;
+$secondary: #B87333;
+$tertiary: #243451;
+
+// General
+$body-bg: $almost-white;
+
+// Header
+$brandname-text: $white90;
+$brandname-text-hover: $white;
+$header-bg: $primary;
+$header-text: $white;
+$header-height: 5rem;
+
+// General Use
+$light-text: $white;
+$light-text-hover: $white;
+$dark-text: $black;
+$dark-text-hover: $black;
+
+// Other
+$special-bg: $midnight;
+$article-bg: $white;
+
+// Special
+// Homepage - Sections
+$even-bg: $almost-white;
+$even-text: $dark-text;
+$odd-bg: $midnight;
+$odd-text: $light-text;

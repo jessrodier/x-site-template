@@ -1,0 +1,74 @@
+@use '../base/index' as *;
+
+footer {
+  margin-top: auto;
+  // background: $midnight;
+  background-color: $black;
+  color: $white;
+  font-size: 1rem;
+  p,
+  a {
+    font-size: var(--font-size-sm);
+    color: $white;
+    border-color: $white;
+  }
+  .social-link {
+    font-size: var(--font-size-md);
+    color: $white75 !important;
+    margin: 0.15rem 0.25rem;
+    &:hover,
+    &:focus {
+      color: $secondary !important;
+    }
+  }
+}
+
+
+#footer-menu {
+  margin: 0;
+  &.menu {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sub-menu {
+    margin: 0.25rem 0;
+    padding: 0;
+    .menu-item {
+      font-size: 1rem;
+      margin: 0;
+      width: auto;
+      line-height: 1.75;
+      a {
+        border-bottom-width: 0px;
+      }
+    }
+  }
+  .menu-item {
+    list-style-type: none;
+    margin: 0.5rem;
+    width: 8rem;
+    text-transform: uppercase;
+    text-align: center;
+    a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $white75;
+      border-color: transparent;
+      border-bottom-style: solid;
+      padding: 0;
+      &:hover,
+      &:focus {
+        // font-size: 0.9rem;
+        color: $white;
+        background: transparent;
+        border-color: $white;
+      }
+    }
+    @include media-breakpoint(md) {
+      width: auto;
+      margin: 0.25rem 1rem;
+    }
+  }
+}

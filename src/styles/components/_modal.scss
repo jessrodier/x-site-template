@@ -1,0 +1,97 @@
+﻿@use '../base/index' as *;
+
+body {
+    &.modal-open {
+        height: 100vh;
+        overflow-y: hidden;
+        #wilson-modal {
+            background-color: $black75;
+        }
+    }
+}
+
+#wilson-modal {
+    display: none;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    #delete-btn,
+    #okay-btn,
+    #continue-btn,
+    #save-btn,
+    #send-btn,
+    #submit-btn,
+    #close-btn,
+    #cancel-btn {
+        display: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+#modal-dialog {
+    background: white;
+    border: 1px solid gray;
+    margin: 2rem auto;
+    width: auto;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    &.xl {
+        max-width: 80%;
+    }
+    &.lg {
+        max-width: 50rem;
+    }
+    &.md {
+        max-width: 40rem;
+    }
+    &.sm {
+        max-width: 30rem;
+    }
+}
+
+#modal-header {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $lighter-gray;
+    padding: 1rem;
+    h2 {
+        margin: 0;
+    }
+    .close {
+        font-size: 1.5rem;
+    }
+}
+
+#modal-body {
+    padding: 2rem 1.5rem;
+    h3 {
+        margin: 0 0 0.5rem 0;
+    }
+    p {
+        margin: 0.5rem 0;
+    }
+}
+
+#modal-footer {
+    @include flex-row;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-top: 1px solid $lighter-gray;
+    .primary-actions {
+        @include row;
+    }
+    button {
+        margin: 0 0.25rem;
+    }
+}

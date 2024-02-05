@@ -1,0 +1,219 @@
+﻿// Tools
+@use 'tools/normalize' as *;
+@use 'tools/soft-shadow' as *;
+
+// Base
+@use 'base/breakpoints' as *;
+@use 'base/mixins' as *;
+@use 'base/settings' as *;
+@use 'base/typography' as *;
+@use 'base/utilities' as *;
+@use 'base/variables' as *;
+
+// Components
+@use 'components/accordions' as *;
+@use 'components/alerts' as *;
+@use 'components/back-to-top' as *;
+@use 'components/blocks' as *;
+// @use 'components/dropdown-menu' as *; // What is going on here? Is this a dupe?
+// @use 'components/dropdown-menu-too' as *; // What is going on here? Is this a dupe?
+@use 'components/cards' as *;
+@use 'components/modal' as *;
+@use 'components/pills' as *;
+// @use 'components/splash-screen' as *;
+@use 'components/toolbars' as *;
+
+// Elements
+@use 'elements/buttons' as *;
+@use 'elements/forms' as *;
+@use 'elements/links' as *;
+
+// Layouts
+@use 'layouts/base' as *;
+@use 'layouts/footer' as *;
+@use 'layouts/sidebar' as *; // Todo?
+@use 'layouts/top-nav' as *;
+
+// Theming
+@use 'theming/default' as *;
+@use 'theming/fluid' as *;
+
+// Pages
+@use 'pages/blog-posts' as *;
+@use 'pages/home' as *;
+@use 'pages/menus' as *;
+
+
+// ================
+// TODO: Anything below is just for quick styling, and will need to be moved to it's final proper destination.
+// ================
+
+* {
+  box-sizing: border-box;
+}
+
+// Site-Specific
+.spacing-container {
+  border: 1px dashed $light-gray;
+  margin: 0.175rem 0;
+}
+
+// Not Sure...
+// ...Sidebar List Stuff
+.list-heading {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 1rem 0 0 0;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+
+// alignment
+.content-right {
+  text-align: right;
+}
+
+.content-left {
+  text-align: left;
+}
+
+// Skip to main content
+#skip-to-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: auto;
+  overflow: hidden;
+  z-index: -999;
+  font-weight: 600;
+  transition: all 0.5 ease;
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $black;
+    left: 1rem;
+    top: 0.5rem;
+    height: auto;
+    width: 350px;
+    // overflow: auto;
+    // margin: 10px auto;
+    // display: block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 3px solid $secondary;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    font-size: 1.25rem;
+    z-index: 999;
+    transition: all 0.5 ease;
+  }
+}
+
+// floating shapes background
+.shape {
+  margin: 0 auto;
+  position: relative;
+}
+
+.random-shape:after {
+  font-family: FontAwesome;
+  content: "\f005";
+}
+
+$circle-size: 100px;
+$colors: #FFD700, #FFF8DC, #DB7093, #C2B7FE, #95A9FF;
+
+$paper-plane: '\f1d8';
+$star: '\f005';
+$square: '\f0c8';
+$circle: '\f111';
+$beer: '\f0fc';
+$martini: '\f000';
+$code: '\f121';
+$squarebrackets: '\f7e9';
+$curlybrackets: '\f7ea';
+
+$shapes: $star, $circle, $code, $martini, $beer;
+
+$shape-count: 35;
+
+@for $i from 1 through $shape-count {
+  $shape-size: random(5);
+  $rotation: random(360);
+  $speed: 150 + random(10);
+  $color-key: random( length($colors) );
+  $shape-color: nth( $colors, $color-key );
+  $shape-key: random( length($shapes) );
+  $shape-type: nth( $shapes, $shape-key );
+  
+  @keyframes shape-#{$i} {
+    0% {
+      transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
+    }
+    100% {
+      transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+    }
+  }
+
+  .shape-container--#{$i} { 
+    animation: shape-#{$i} #{$speed}s linear infinite;
+
+    .random-shape:after {
+      margin: #{$shape-size}rem;
+      color: $shape-color;
+      font-size: #{$shape-size * 0.5}rem;
+      content: $shape-type;
+    }
+  }
+}
+
+// My Site Only
+// .beer-tap {
+//   width: 25rem;
+// }
+
+// .beer-foam {
+//   width: 100vw;
+// }
+
+section {
+  &#main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+.pre-title {
+  line-height: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #58b3e7;
+  text-transform: uppercase;
+  margin-bottom: -0.75rem;
+  // text-align: center;
+}
+
+// Add This
+.addthis {
+  margin: 1rem 0 5rem 0;
+}
+
+// Post Views Counter
+.post-footer {
+  margin-top: 3rem;
+  display: flex;
+  border-top: 1px solid $lighter-gray;
+  border-bottom: 1px solid $lighter-gray;
+  padding: 1rem;
+}
+
+.dark-bg {
+  .subtitle {
+    color: $white !important;
+  }
+}
