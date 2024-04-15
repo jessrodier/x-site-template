@@ -12,12 +12,8 @@
 
 <?php get_header(); ?>
 
-<?php
-// echo get_template_part( 'template-parts/extras/splash', 'screen' );
-?>
-
 <main aria-hidden="false" id="homepage">
-  <section id="main" class="container-fluid full" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/calzone.jpg);">
+  <section id="main" class="container-fluid full" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/hero-background.jpg);">
   <!-- <section id="main" class="container-fluid full"> -->
     <div class="container">
       <div class="hero-announcement-box">

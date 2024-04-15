@@ -4,7 +4,7 @@
 
 <?php include 'htmlhead.php'; ?>
 
-<body id="fluid-theme" class="container-fluid fixed-header prevent-scroll splashing"> <!-- body tag closes in footer.php -->
+<body id="fluid-theme" class="container-fluid fixed-header"> <!-- body tag closes in footer.php -->
 
 <a id="skip-to-main" href="#main">skip to main content</a>
 
