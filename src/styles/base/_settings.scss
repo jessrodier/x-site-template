@@ -1,10 +1,10 @@
 @use 'variables' as *;
 
 // Brand Colors
-// $primary: $midnight;
-$primary: $black;
-$secondary: #B87333;
-$tertiary: #243451;
+$primary: #003C70;
+$secondary: #0B7D52;
+$tertiary: #D3E0Eb;
+$quaternary: #94AFC6;
 
 // General
 $body-bg: $almost-white;
@@ -14,7 +14,9 @@ $brandname-text: $white90;
 $brandname-text-hover: $white;
 $header-bg: $primary;
 $header-text: $white;
-$header-height: 5rem;
+$header-height: 7rem;
+$header-upper-height: 2.5rem;
+$header-main-height: 5rem;
 
 // General Use
 $light-text: $white;

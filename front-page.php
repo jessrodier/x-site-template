@@ -13,73 +13,97 @@
 <?php get_header(); ?>
 
 <main aria-hidden="false" id="homepage">
-  <section id="main" class="container-fluid full" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/hero-background.jpg);">
-  <!-- <section id="main" class="container-fluid full"> -->
-    <div class="container">
-      <div class="hero-announcement-box">
-        <div class="content"><?php the_content(); ?></div>
-      </div>
-      <div class="hero">
-        <div class="title-accent secondary-text mb-2">TODO Secondary Text</div>
-        <div class="sub-title"><?php echo get_bloginfo('description'); ?></div>
-        <div class="description">This is a todo <b>description</b> with more <b>text</b> and a good website!</div>
-        <a id="cta" href="/todo-1" class="btn btn-outline-secondary">Todo Page 1 &raquo;</a>
-        <a id="cta" href="/todo-2" class="btn btn-outline-secondary">Todo Page 2 &raquo;</a>
-      </div>
-    </div>
-  </section>
-  <section id="events" class="container-fluid">
-    <div class="container">
-      <h2 class="title">Section Header</h2>
-      <p class="subtitle">Lorem ipsum dolor sit amet!</p>
-      <a href="/events" id="events" class="btn btn-secondary mx-0 mb-3">view all &raquo;</a>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-          <a href="<?php the_permalink(); ?>" class="card no-thumb">
-            <div class="card-body centered">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-meta mb-0">Jan. 1st, 2099</p>
-              <p class="card-meta m-0">4:00pm</p>
-              <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </a>
+  <!-- Hero Section -->
+  <section id="main" class="hero container-fluid">
+      <div class="container">
+        <div class="hero__content">
+          <p class="lead secondary">20 Years of Experience</p>
+          <h2 class="title">#1 Trusted REAC Specialists</h2>
+          <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button class="cta btn btn-secondary">Let's Get Started &raquo;</button>
         </div>
-      </div>
+        <div class="hero__graphic" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/hero-bg.PNG);"></div>
     </div>
   </section>
-  <!-- <section id="about" class="container-fluid full dark-bg">
+
+  <!-- Services / Band Section -->
+  <section id="services" class="band container-fluid">
     <div class="container">
-      <h2 class="title">our story.</h2>
-      <p>Well you see... it all started...</p>
+      <div class="band__content">
+        <p class="lead tertiary">Our Services</p>
+        <h2 class="title">The best of the best.</h2>
+      </div>
+      <div class="card-row">
+          <div class="card">
+            <div class="card__body centered">
+              <h5 class="card__title">Interior & Exterior Repair</h5>
+            </div>
+            <div class="card__footer">
+              <a class="card__link" href="// TODO">Learn More &raquo;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body centered">
+              <h5 class="card__title">Interior & Exterior Repair</h5>
+            </div>
+            <div class="card__footer">
+              <a class="card__link" href="// TODO">Learn More &raquo;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body centered">
+              <h5 class="card__title">Interior & Exterior Repair</h5>
+            </div>
+            <div class="card__footer">
+              <a class="card__link" href="// TODO">Learn More &raquo;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body centered">
+              <h5 class="card__title">Interior & Exterior Repair</h5>
+            </div>
+            <div class="card__footer">
+              <a class="card__link" href="// TODO">Learn More &raquo;</a>
+            </div>
+          </div>
     </div>
-  </section> -->
-  <section id="reviews" class="container-fluid dark-bg">
+  </section>
+
+  <!-- Our Company / Padded Section -->
+  <section id="our-company" class="padded container-fluid full dark-bg">
+    <div class="container">
+      <hr class="short">
+      <p class="lead primary">Our Company</p>
+      <h2 class="title">REAC is what we do.</h2>
+      <p class="mt-2">The <em>only</em> choice of the <a href="#TODO">US Housing Consultants</a></p>
+      <p class="mt-5">The REAC Company specializes in affordable housing preparation repair work for all HUD REAC and state housing inspections. We can assist with all your manpower needs to alleviate backlogged work orders, fill labor shortages, or assist generally with property physical compliance and stabilization.</p>
+      <p class="mt-3">Affordable housing properties can face tremendous challenges preparing for inspections and working out of non-compliance issues, and often, properties do not have the on-hand labor resources required. The REAC Company can assist with mobilizing large or small crews on short notice while providing quality work.</p>
+      <p class="mt-3">We have a deep understanding of REAC’s scoring methodology and take our commitment to quality very seriously to ensure that repairs made are meeting industry standard requirements according to REAC’s guidance.</p>
+    </div>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/home-section-triangle.svg" alt="section bottom" aria-hidden="true">
+  </section>
+
+  <!-- What is NSPIRE? / TODO Section Type?? -->
+  <section id="what-is-nspire" class="container-fluid full dark-bg">
+    <div class="container">
+      <hr class="short">
+      <p class="lead primary">Our Company</p>
+      <h2 class="title">REAC is what we do.</h2>
+      <p class="mt-2">The <em>only</em> choice of the <a href="#TODO">US Housing Consultants</a></p>
+      <p class="mt-5">The REAC Company specializes in affordable housing preparation repair work for all HUD REAC and state housing inspections. We can assist with all your manpower needs to alleviate backlogged work orders, fill labor shortages, or assist generally with property physical compliance and stabilization.</p>
+      <p class="mt-3">Affordable housing properties can face tremendous challenges preparing for inspections and working out of non-compliance issues, and often, properties do not have the on-hand labor resources required. The REAC Company can assist with mobilizing large or small crews on short notice while providing quality work.</p>
+      <p class="mt-3">We have a deep understanding of REAC’s scoring methodology and take our commitment to quality very seriously to ensure that repairs made are meeting industry standard requirements according to REAC’s guidance.</p>
+</div>
+  </section>
+
+  <!--  -->
+  <!-- <section id="reviews" class="container-fluid dark-bg">
     <div class="container">
       <h2 class="title">reviews</h2>
       <p class="subtitle">Check out what other people are saying...</p>
       <div class="review-container">
         <p>todo: reviews here</p>
       </div>
-    </div>
-  </section>
-  <!-- <section class="container-fluid">
-    <div class="container">
-      <?php
-// the_field('passions_title');
-?>
-      <?php
-// the_field('passions');
-?>
-    </div>
-  </section> -->
-  <!-- <section class="container-fluid">
-    <div class="container">
-      <?php
-// the_field('skills_title');
-?>
-      <?php
-// the_field('skills');
-?>
     </div>
   </section> -->
 </main>

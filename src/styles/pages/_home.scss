@@ -1,6 +1,101 @@
 @use '../base/index' as *;
 
-.text-only {
+.text-only { // TODO: Is this used
   height: 8rem;
   margin: 1rem 0;
+}
+
+
+.hero {
+  background: $white;
+  height: 65vh;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    max-width: 50vw;
+    margin-top: $header-height;
+    .summary {
+      margin: 1rem 0;
+    }
+    .cta {
+      margin: 0;
+    }
+  }
+
+  &__graphic {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    top: calc($header-height / 2);
+    right: -15vw;
+    border-radius: 50%;
+    border: 2rem solid $tertiary;
+    outline: 0.5rem solid $quaternary;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+
+.band {
+  background-color: $primary;
+  color: $white;
+  height: 17.5rem;
+  padding: 2rem 0;
+  position: relative;
+  &__content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.padded {
+  // height: 75vh;
+  background-color: $tertiary;
+  padding: 10vh;
+  text-align: center;
+}
+
+#what-is-nspire {
+  height: 75vh;
+  background-color: $white;
+  padding: 10vh;
+  text-align: center;
+}
+
+.bottom-tri {
+  width: 100vw;
+  height: 10rem;
+  position: absolute;
+  left: 0;
+  bottom: -9rem;
+}
+
+// TODO: Typography
+.lead {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  &.primary {
+    color: $primary;
+  }
+  &.secondary {
+    color: $secondary;
+  }
+  &.tertiary {
+    color: $tertiary;
+  }
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  margin: 0;
+}
+
+.summary {
+  // TODO: Do I need anything here?
 }
