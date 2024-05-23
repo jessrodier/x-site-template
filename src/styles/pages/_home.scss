@@ -53,25 +53,57 @@
 }
 
 .padded {
-  // height: 75vh;
   background-color: $tertiary;
   padding: 10vh;
   text-align: center;
 }
 
 #what-is-nspire {
-  height: 75vh;
   background-color: $white;
   padding: 10vh;
-  text-align: center;
+  padding-top: calc(10vh + 8rem);
+  text-align: left;
+}
+
+#more-info {
+  background-color: $white;
+  padding: 10vh;
+  text-align: right;
+}
+
+#badges {
+  background: $primary;
+  border-top: 1rem solid $quaternary;
+  border-bottom: 1rem solid $quaternary;
+  outline: 1rem solid $tertiary;
+  z-index: 1;
+}
+
+.badge {
+  display: block;
+  height: 10rem;
+  margin: 2rem auto;
+}
+
+#contact-us {
+
+}
+
+.contact-form-container {
+  background-color: rgba(255,255,255,0.5);
+  padding: 2rem;
+}
+
+// TODO: What?!
+.graphic {
+  width: 25rem;
+  display: block;
 }
 
 .bottom-tri {
-  width: 100vw;
-  height: 10rem;
+  width: 100%;
   position: absolute;
-  left: 0;
-  bottom: -9rem;
+  z-index: 1;
 }
 
 // TODO: Typography
