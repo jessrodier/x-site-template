@@ -6,37 +6,40 @@
     <a href="#home"><i class="fal fa-chevron-double-up"></i><span>top</span></a>
   </div>
 
+  <img class="footer-topper" src="<?php echo get_template_directory_uri(); ?>/assets/footer-topper.svg" alt="footer topper" aria-hidden="true">
   <footer class="container-fluid">
     <div class="container">
-      <nav class="col-12 py-3">
-      <?php wp_nav_menu([
-        'theme_location' => 'footer-menu',
-        'menu_id' => 'footer-menu',
-      ]); ?>
-      </nav>
       <div class="row justify-content-around py-3">
-        <div class="col-12 col-md-4 text-center">
-          <h5>Follow Us</h5>
-          <div class="us-anchor mt-3 mb-4">
-            <a href="https://www.facebook.com/" target="_blank" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://goo.gl/maps/" target="_blank" class="social-link" title="Google Profile"><i class="fa-brands fa-google"></i></a>
-          </div>
+        <div class="col-12 col-md-3 text-center">
+        <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo-white.svg" alt="TRC Logo" aria-hidden="false">
         </div>
-        <div class="col-12 col-sm-6 col-md-4 mb-4 text-center">
-          <h5>Contact Us</h5>
-          <p><a href="phone:508-461-7216">(508) 461-7216</a></p>
-          <p><a href="mailto:hello@todo.lol">hello@todo.lol</a></p>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h5>Contact Info</h5>
+          <p><strong>Main Office:</strong></p>
+          <p>Worcester, MA</p>
+          <p class="mt-4"><strong>Phone:</strong></p>
+          <p><a href="phone:508-340-6460">(508) 340-6460</a></p>
+          <p class="mt-4"><strong>Email:</strong></p>
+          <p><a href="mailto:hello@thereaccompany.com">hello@theREACcompany.com</a></p>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 text-center">
-          <h5>Visit Us</h5>
-          <p><strong>TODO Company Name</strong></p>
-          <p>999 Todo Lane</p>
-          <p>Todo, MA 99999</p>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h5>Quick Links</h5>
+          <?php wp_nav_menu([
+            'theme_location' => 'footer-menu',
+            'menu_id' => 'footer-menu',
+          ]); ?>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-right">
+          <h5>The REAC Company</h5>
+          <p>We have a deep understanding of REAC's scoring methodology and take our commitment to quality very seriously to ensure that repairs made are meeting industry standard requirements.</p>
         </div>
       </div>
       <div class="col-12 justify-content-between text-center py-2">
-        <p>&copy;TODO - <?php echo date('Y'); ?>&nbsp;<?php echo get_bloginfo('name'); ?>. All Rights Reserved. | Website handcrafted with <span title="love">❤️</span> by Jess.</p>
+        <p>&copy;Copyright <?php echo date(
+          'Y'
+        ); ?>&nbsp;<?php echo get_bloginfo(
+  'name'
+); ?>. All Rights Reserved. | Website handcrafted with <span title="love">❤️</span> by Jess.</p>
       </div>
     </div>
 

@@ -13,7 +13,7 @@
 <?php get_header(); ?>
 
 <main aria-hidden="false">
-  <article id="main" class="white-bg container">
+  <article id="main" class="container">
     <h1 class="text-center">
       <?php
       echo get_the_title();

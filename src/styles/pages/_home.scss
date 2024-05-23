@@ -58,14 +58,14 @@
   text-align: center;
 }
 
-#what-is-nspire {
+#what-is-reac {
   background-color: $white;
   padding: 10vh;
   padding-top: calc(10vh + 8rem);
   text-align: left;
 }
 
-#more-info {
+#what-is-nspire{
   background-color: $white;
   padding: 10vh;
   text-align: right;
@@ -86,11 +86,16 @@
 }
 
 #contact-us {
-
+  margin-bottom: -5rem;
+  z-index: -1;
+  padding-bottom: 15vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-form-container {
-  background-color: rgba(255,255,255,0.5);
+  background-color: $white75;
   padding: 2rem;
 }
 

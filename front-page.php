@@ -36,6 +36,7 @@
       <div class="card-row">
           <div class="card">
             <div class="card__body centered">
+              <img class="card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icon-gear-wrench.svg" alt="interior and exterior repairs icon">
               <h5 class="card__title">Interior & Exterior Repair</h5>
             </div>
             <div class="card__footer">
@@ -44,7 +45,8 @@
           </div>
           <div class="card">
             <div class="card__body centered">
-              <h5 class="card__title">Interior & Exterior Repair</h5>
+              <img class="card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icon-magnifier-x.svg" alt="failed inspection icon">
+              <h5 class="card__title">Failed Inspection Response & Bulk Repairs</h5>
             </div>
             <div class="card__footer">
               <a class="card__link" href="// TODO">Learn More &raquo;</a>
@@ -52,7 +54,8 @@
           </div>
           <div class="card">
             <div class="card__body centered">
-              <h5 class="card__title">Interior & Exterior Repair</h5>
+              <img class="card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icon-bucket-mop.svg" alt="property manpower icon">
+              <h5 class="card__title">Temporary & Permanent Property Manpower</h5>
             </div>
             <div class="card__footer">
               <a class="card__link" href="// TODO">Learn More &raquo;</a>
@@ -60,7 +63,8 @@
           </div>
           <div class="card">
             <div class="card__body centered">
-              <h5 class="card__title">Interior & Exterior Repair</h5>
+              <img class="card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icon-gear-hardhat.svg" alt="unit turns icon">
+              <h5 class="card__title">On-Demand Unit Turns</h5>
             </div>
             <div class="card__footer">
               <a class="card__link" href="// TODO">Learn More &raquo;</a>
@@ -85,7 +89,7 @@
   <img class="bottom-tri" src="<?php echo get_template_directory_uri(); ?>/assets/home-section-triangle.svg" alt="section bottom" aria-hidden="true">
 
   <!-- What is NSPIRE? / TODO Section Type?? -->
-  <section id="what-is-nspire" class="container-fluid full dark-bg">
+  <section id="what-is-reac" class="container-fluid full dark-bg">
     <div class="container row">
       <div class="col-6">
         <p class="lead primary">REAC</p>
@@ -99,7 +103,7 @@
   </section>
 
   <!-- Something Else / TODO Section Type?? -->
-  <section id="more-info" class="container-fluid full dark-bg">
+  <section id="what-is-nspire" class="container-fluid full dark-bg">
     <div class="container row">
       <div class="col-6">
         <img class="graphic me-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.PNG" alt="NSPIRE Photo" aria-hidden="true">
@@ -112,17 +116,8 @@
     </div>
   </section>
 
-  <!-- Badges -->
-  <section id="badges" class="container-fluid">
-    <div class="container row">
-      <div class="col-4"><img class="badge" src="<?php echo get_template_directory_uri(); ?>/assets/badge-trusted.svg" alt="trusted badge"></div>
-      <div class="col-4"><img class="badge" src="<?php echo get_template_directory_uri(); ?>/assets/badge-guaranteed.svg" alt="guaranteed badge"></div>
-      <div class="col-4"><img class="badge" src="<?php echo get_template_directory_uri(); ?>/assets/badge-trained.svg" alt="trained badge"></div>
-    </div>
-  </section>
-
   <!-- Contact Us -->
-  <section id="contact-us" class="padded container-fluid">
+  <section id="contact-us" class="padded container-fluid" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/buildings.png);">>
     <div class="container">
       <div class="contact-form-container">
         <p class="lead primary">Contact Us</p>
@@ -132,17 +127,6 @@
       </div>
     </div>
   </section>
-
-  <!--  -->
-  <!-- <section id="reviews" class="container-fluid dark-bg">
-    <div class="container">
-      <h2 class="title">reviews</h2>
-      <p class="subtitle">Check out what other people are saying...</p>
-      <div class="review-container">
-        <p>todo: reviews here</p>
-      </div>
-    </div>
-  </section> -->
 </main>
 
 <?php get_footer(); ?>

@@ -94,11 +94,10 @@ h1 {
 }
 
 h2:not(.title) {
-  font-family: var(--font-family-headings);
-  font-size: var(--font-size-xxl);
-  font-weight: 200;
-  margin: 0.75rem 0;
-  text-transform: uppercase;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin: 3rem 0 1rem 0;
 }
 
 h3 {
@@ -118,12 +117,12 @@ h4 {
 }
 
 h5 {
-  font-family: var(--font-family-headings);
+  font-family: var(--font-family-text);
   font-size: var(--font-size-md);
-  font-weight: 200;
+  font-weight: 600;
   margin: 0;
   text-transform: uppercase;
-  color: #B87333;
+  color: $white;
 }
 
 .h5 {

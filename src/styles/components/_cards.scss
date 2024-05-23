@@ -33,6 +33,10 @@
   &__body {
     text-align: center;
   }
+  &__icon {
+    width: 3rem;
+    margin: 1rem 0;
+  }
   &__title {
     font-weight: 500;
     font-family: var(--font-family-text);

@@ -1,16 +1,32 @@
 @use '../base/index' as *;
 
+.footer-topper {
+  // position: absolute;
+  // bottom: 20rem;
+}
+
 footer {
-  margin-top: auto;
-  // background: $midnight;
-  background-color: $black;
+  margin-top: auto !important;
+  // background-color: $almost-black;
+  background-color: $primary;
   color: $white;
   font-size: 1rem;
+  padding: 2rem 0 0 0 !important;
+  height: 20rem;
   p,
   a {
     font-size: var(--font-size-sm);
     color: $white;
     border-color: $white;
+    margin: 0;
+    line-height: 1.25;
+  }
+  a {
+    color: #a3daff; // todo: add to vars
+    border-color: #a3daff;
+  }
+  .footer-logo {
+    width: 7.5rem;
   }
   .social-link {
     font-size: var(--font-size-md);
@@ -21,54 +37,28 @@ footer {
       color: $secondary !important;
     }
   }
+  h5 {
+    margin-bottom: 1rem;
+  }
+  // TODO: move to typography
+  .text-right {
+    text-align: right;
+  }
 }
 
 
 #footer-menu {
   margin: 0;
   &.menu {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    line-height: 1.5;
   }
-  .sub-menu {
-    margin: 0.25rem 0;
+  ul {
     padding: 0;
-    .menu-item {
-      font-size: 1rem;
-      margin: 0;
-      width: auto;
-      line-height: 1.75;
-      a {
-        border-bottom-width: 0px;
-      }
-    }
+    margin: 0;
   }
-  .menu-item {
+  li {
     list-style-type: none;
-    margin: 0.5rem;
-    width: 8rem;
-    text-transform: uppercase;
-    text-align: center;
-    a {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: $white75;
-      border-color: transparent;
-      border-bottom-style: solid;
-      padding: 0;
-      &:hover,
-      &:focus {
-        // font-size: 0.9rem;
-        color: $white;
-        background: transparent;
-        border-color: $white;
-      }
-    }
-    @include media-breakpoint(md) {
-      width: auto;
-      margin: 0.25rem 1rem;
-    }
+    padding: 0;
+    margin: 0;
   }
 }

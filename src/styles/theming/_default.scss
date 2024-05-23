@@ -10,6 +10,7 @@
 article {
   &#main {
     padding: 2rem 2rem 5rem;
+    min-height: 55vh;
     @media only screen and (max-width: 875px) {
       padding: 1.5rem 1rem 3rem;
     }
