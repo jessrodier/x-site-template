@@ -23,17 +23,17 @@
       <div class="container">
         <a class="logo-container us-anchor" href="<?php echo get_home_url(); ?>" alt="back to home">
           <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="TODO Logo">
-        </a>
-        <button id="mobile-menu" class="btn btn-text">
-          <i class="far fa-bars" aria-hidden="false" title="Menu"></i>
-        </button>
+        </a>        
         <nav id="primary-nav">
           <?php wp_nav_menu([
             'theme_location' => 'header-menu',
             'menu_id' => 'header-menu',
           ]); ?>
+          <button class="btn btn-secondary header-cta">Request Callback</button>
         </nav>
-        <button class="btn btn-secondary">Request Callback</button>
+        <button id="mobile-menu" class="btn btn-text">
+          <i class="far fa-bars" aria-hidden="false" title="Menu"></i>
+        </button>
       </div>
     </div>
   </header>

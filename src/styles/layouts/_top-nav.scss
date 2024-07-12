@@ -11,7 +11,9 @@
     align-items: center;
   }
   #primary-nav {
-    @include media-breakpoint(md) {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint(xl) {
       display: none;
     }
   }
@@ -57,11 +59,11 @@
 
 #mobile-menu {
   display: none;
-  color: $white;
+  color: $black;
   padding: 0.75rem;
   margin: 0;
   font-size: 1.75rem;
-  @include media-breakpoint(md) {
+  @include media-breakpoint(xl) {
     display: block;
   }
 }
@@ -103,7 +105,7 @@
     a {
       font-weight: 700;
       border-bottom: 2px solid $secondary;
-      @include media-breakpoint(md) {
+      @include media-breakpoint(xl) {
         border-bottom: none;
         color: $secondary !important;
       }
@@ -163,6 +165,11 @@
       }
     }
   }
+  .header-cta {
+    @include media-breakpoint(xl) {
+      display: none;
+    }
+  }
   &.open {
     display: block;
     position: absolute;
@@ -180,12 +187,17 @@
         a {
           // font-size: 2rem;
           font-size: var(--font-size-md);
+          color: $white !important;
           padding: 1rem 2rem;
           margin: 0;
           width: 100%;
           text-align: center;
         }
       }
+    }
+    .header-cta {
+      display: block;
+      margin: 3rem auto;
     }
   }
   @media only screen and (max-width: 600px) {
