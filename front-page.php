@@ -91,24 +91,24 @@
   <!-- What is NSPIRE? / TODO Section Type?? -->
   <section id="what-is-reac" class="container-fluid full dark-bg">
     <div class="container row">
-      <div class="col-6">
+      <div class="col-12 col-lg-6">
         <p class="lead primary">REAC</p>
         <h2 class="title">What is REAC?</h2>
         <p class="mt-3">Real Estate Assessment Center (REAC), a division of HUD with the mission to provide customers with independent, actionable assessments that advance risk-informed decisions about the condition of the nation’s affordable housing portfolio.</p>
       </div>
-      <div class="col-6">
-        <img class="graphic ms-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png" alt="REAC Photo" aria-hidden="true">
+      <div class="col-12 col-lg-6">
+        <img class="graphic m-auto me-lg-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png" alt="REAC Photo" aria-hidden="true">
       </div>
     </div>
   </section>
 
   <!-- Something Else / TODO Section Type?? -->
   <section id="what-is-nspire" class="container-fluid full dark-bg">
-    <div class="container row">
-      <div class="col-6">
-        <img class="graphic me-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png" alt="NSPIRE Photo" aria-hidden="true">
+    <div class="container row flex-column-reverse flex-lg-row">
+      <div class="col-12 col-lg-6">
+        <img class="graphic m-auto me-lg-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png" alt="NSPIRE Photo" aria-hidden="true">
       </div>
-      <div class="col-6">
+      <div class="col-12 col-lg-6">
         <p class="lead primary">NSPIRE</p>
         <h2 class="title">What is NSPIRE?</h2>
         <p class="mt-3">National Standards for the Physical Inspection of Real Estate (NSPIRE), the new inspection model implemented for most properties on 10/1/23, prioritizes health, safety, and functional defects over appearance. It implements inspections that better reflect the true physical conditions of the property. The NSPIRE model supports the adoption of sound, year-round maintenance practices.</p>
@@ -117,7 +117,7 @@
   </section>
 
   <!-- Contact Us -->
-  <section id="contact-us" class="padded container-fluid" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/buildings.png);">>
+  <section id="contact-us" class="padded container-fluid" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/buildings.png);">
     <div class="container">
       <div class="contact-form-container">
         <p class="lead primary">Contact Us</p>
