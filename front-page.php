@@ -22,7 +22,7 @@
           <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <button class="cta btn btn-secondary">Let's Get Started &raquo;</button>
         </div>
-        <div class="hero__graphic" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/hero-bg.PNG);"></div>
+        <div class="hero__graphic" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png);"></div>
     </div>
   </section>
 
@@ -97,7 +97,7 @@
         <p class="mt-3">Real Estate Assessment Center (REAC), a division of HUD with the mission to provide customers with independent, actionable assessments that advance risk-informed decisions about the condition of the nation’s affordable housing portfolio.</p>
       </div>
       <div class="col-6">
-        <img class="graphic ms-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.PNG" alt="REAC Photo" aria-hidden="true">
+        <img class="graphic ms-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png" alt="REAC Photo" aria-hidden="true">
       </div>
     </div>
   </section>
@@ -106,7 +106,7 @@
   <section id="what-is-nspire" class="container-fluid full dark-bg">
     <div class="container row">
       <div class="col-6">
-        <img class="graphic me-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.PNG" alt="NSPIRE Photo" aria-hidden="true">
+        <img class="graphic me-auto" src="<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png" alt="NSPIRE Photo" aria-hidden="true">
       </div>
       <div class="col-6">
         <p class="lead primary">NSPIRE</p>
