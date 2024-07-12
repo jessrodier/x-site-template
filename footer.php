@@ -18,7 +18,7 @@
           <p><strong>Main Office:</strong></p>
           <p>Worcester, MA</p>
           <p class="mt-4"><strong>Phone:</strong></p>
-          <p><a href="phone:508-340-6460">(508) 340-6460</a></p>
+          <p><a href="tel:1-833-483-7322">1-833-HUD-REAC</a></p>
           <p class="mt-4"><strong>Email:</strong></p>
           <p><a href="mailto:hello@thereaccompany.com">hello@theREACcompany.com</a></p>
         </div>

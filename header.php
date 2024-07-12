@@ -13,8 +13,8 @@
       <div class="container">
         <div class="start"></div>
         <div class="end">
-          <a href="#todo" class="me-3">CONTACT US</a>
-          <a href="tel:508-340-6460" class="me-3">(508) 340-6460</a>
+          <a href="/contact-us" class="me-3">CONTACT US</a>
+          <a href="tel:1-833-483-7322" class="me-3">1-833-HUD-REAC</a>
           <!-- TODO: Insert social icons -->
         </div>
       </div>
@@ -29,7 +29,7 @@
             'theme_location' => 'header-menu',
             'menu_id' => 'header-menu',
           ]); ?>
-          <button class="btn btn-secondary header-cta">Request Callback</button>
+          <a href="/contact-us" class="btn btn-secondary header-cta">Request Callback</a>
         </nav>
         <button id="mobile-menu" class="btn btn-text">
           <i class="far fa-bars" aria-hidden="false" title="Menu"></i>

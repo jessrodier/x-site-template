@@ -166,6 +166,8 @@
     }
   }
   .header-cta {
+    text-transform: none;
+    color: $white !important;
     @include media-breakpoint(xl) {
       display: none;
     }
