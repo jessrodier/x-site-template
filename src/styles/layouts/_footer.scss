@@ -3,6 +3,18 @@
 .footer-topper {
   // position: absolute;
   // bottom: 20rem;
+  @media only screen and (max-width: 1273px) {
+    display: none;
+  }
+  @media only screen and (max-width: 960px) {
+    display: block;
+  }
+  @media only screen and (max-width: 916px) {
+    display: none;
+  }
+  @media only screen and (max-width: 388px) {
+    display: block;
+  }
 }
 
 footer {
@@ -12,7 +24,7 @@ footer {
   color: $white;
   font-size: 1rem;
   padding: 2rem 0 0 0 !important;
-  height: 20rem;
+  // height: 20rem;
   p,
   a {
     font-size: var(--font-size-sm);
@@ -27,6 +39,9 @@ footer {
   }
   .footer-logo {
     width: 7.5rem;
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 2rem;
+    }
   }
   .social-link {
     font-size: var(--font-size-md);
@@ -43,6 +58,13 @@ footer {
   // TODO: move to typography
   .text-right {
     text-align: right;
+  }
+
+  @media only screen and (max-width: 575px) {
+    text-align: center;
+    .text-right {
+      text-align: center !important;
+    }
   }
 }
 
