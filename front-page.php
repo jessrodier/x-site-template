@@ -17,9 +17,9 @@
   <section id="main" class="hero container-fluid">
       <div class="container">
         <div class="hero__content">
-          <p class="lead secondary">20 Years of Experience</p>
+          <p class="lead secondary">20+ Years of Experience</p>
           <h2 class="title">#1 Trusted REAC Specialists</h2>
-          <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="summary">Let our experienced team guide you and get your property in shape for your next NSPIRE inspection.</p>
           <a href="/contact-us" class="cta btn btn-secondary">Let's Get Started &raquo;</a>
         </div>
         <div class="hero__graphic" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/hero-bg.png);"></div>
@@ -79,7 +79,7 @@
       <hr class="short">
       <p class="lead primary">Our Company</p>
       <h2 class="title">REAC is what we do.</h2>
-      <p class="mt-2">The <em>only</em> choice of the <a href="#TODO">US Housing Consultants</a></p>
+      <p class="mt-2">The trusted choice of the <a href="https://www.us-hc.com/" target="_BLANK">US Housing Consultants</a></p>
       <p class="mt-5">The REAC Company specializes in affordable housing preparation repair work for all HUD REAC and state housing inspections. We can assist with all your manpower needs to alleviate backlogged work orders, fill labor shortages, or assist generally with property physical compliance and stabilization.</p>
       <p>Affordable housing properties can face tremendous challenges preparing for inspections and working out of non-compliance issues, and often, properties do not have the on-hand labor resources required. The REAC Company can assist with mobilizing large or small crews on short notice while providing quality work.</p>
       <p>We have a deep understanding of REAC’s scoring methodology and take our commitment to quality very seriously to ensure that repairs made are meeting industry standard requirements according to REAC’s guidance.</p>
@@ -123,7 +123,7 @@
         <p class="lead primary">Contact Us</p>
         <h2 class="title">Don't wait, reach out today.</h2>
         <p>Have questions or need an estimate? We're here for you!</p>
-        <p><em>Insert form here.</em></p>
+        <?php echo do_shortcode('[wpforms id="1080"]'); ?>
       </div>
     </div>
   </section>

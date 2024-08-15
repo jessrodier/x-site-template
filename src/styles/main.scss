@@ -224,3 +224,66 @@ hr {
     
   }
 }
+
+// Contact Form Submit Button
+.wpforms-submit {
+  display: inline-flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: var(--font-size-base) !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  padding: 0.5rem 1.5rem !important;
+  margin: 0.5rem !important;
+  background-color: $primary !important;
+  border-width: 1px !important;
+  color: $white !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+  border-radius: $button-border-radius !important;
+  cursor: pointer !important;
+  background-color: $primary !important;
+  color: $white !important;
+  border-color: $primary !important;
+  @include transition-mid;
+  &:hover,
+  &:focus {
+    background-color: lighten($primary, 15%) !important;
+    border: 1px solid transparent !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $focus !important;
+    outline: none !important;
+  }
+  &:disabled {
+    background-color: $lighter-gray !important;
+    color: $gray !important;
+    border-color: transparent !important;
+    cursor: default !important;
+    font-weight: 600;
+    &:hover,
+    &:focus {
+      background-color: $lighter-gray !important;
+      box-shadow: none !important;
+    }
+  }
+  &:hover,
+  &:focus {
+    background-color: darken($primary, 10%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px $focus !important;
+  }
+  &:disabled {
+    background-color: lighten($primary, 25%) !important;
+    color: $white !important;
+    border-color: transparent !important;
+    cursor: default !important;
+    &:hover,
+    &:focus {
+      background-color: lighten($primary, 25%) !important;
+      box-shadow: none !important;
+    }
+  }
+}

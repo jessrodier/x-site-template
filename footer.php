@@ -20,7 +20,7 @@
           <p class="mt-4"><strong>Phone:</strong></p>
           <p><a href="tel:1-833-483-7322">1-833-HUD-REAC</a></p>
           <p class="mt-4"><strong>Email:</strong></p>
-          <p><a href="mailto:hello@thereaccompany.com">hello@theREACcompany.com</a></p>
+          <p><a href="mailto:ben@thereaccompany.com">ben@theREACcompany.com</a></p>
         </div>
         <div class="col-12 col-sm-6 col-md-3 mb-4">
           <h5>Quick Links</h5>
@@ -39,7 +39,7 @@
           'Y'
         ); ?>&nbsp;<?php echo get_bloginfo(
   'name'
-); ?>. All Rights Reserved. | Website handcrafted with <span title="love">❤️</span> by Jess.</p>
+); ?>. All Rights Reserved.</p>
       </div>
     </div>
 
