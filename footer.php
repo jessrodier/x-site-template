@@ -32,14 +32,13 @@
         <div class="col-12 col-sm-6 col-md-3 text-right">
           <h5>The REAC Company</h5>
           <p>We have a deep understanding of REAC's scoring methodology and take our commitment to quality very seriously to ensure that repairs made are meeting industry standard requirements.</p>
+          <a id="bbb-rating" class="us-anchor" href="https://www.bbb.org/us/ma/leicester/profile/housing-consultants/the-reac-company-llc-0261-352240/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-central-westernma.bbb.org/seals/blue-seal-280-80-bbb-352240.png" style="border: 0;" alt="The REAC Company LLC BBB Business Review" /></a>
         </div>
       </div>
       <div class="col-12 justify-content-between text-center py-2">
         <p>&copy;Copyright <?php echo date(
           'Y'
-        ); ?>&nbsp;<?php echo get_bloginfo(
-  'name'
-); ?>. All Rights Reserved.</p>
+        ); ?>&nbsp;<?php echo get_bloginfo('name'); ?>. All Rights Reserved.</p>
       </div>
     </div>
 
