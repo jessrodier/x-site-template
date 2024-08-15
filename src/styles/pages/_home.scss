@@ -91,6 +91,31 @@
   }
 }
 
+.testimonials-band {
+  background-color: $primary;
+  color: $white;
+  padding: 2rem 0;
+  position: relative;
+  &__content {
+    text-align: center;
+    margin-bottom: 2rem;
+    h3 {
+      display: none;
+    }
+    h4, p {
+      color: $white !important;
+    }
+  }
+
+  .testimonials-wrapper {
+    margin-top: 5rem;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    height: auto;
+  }
+}
+
 .padded {
   background-color: $tertiary;
   padding: 10vh;

@@ -116,6 +116,20 @@
     </div>
   </section>
 
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-band container-fluid">
+    <div class="container">
+      <div class="testimonials-band__content">
+        <p class="lead tertiary">Testimonials</p>
+        <h2 class="title">Don't just take it from us...</h2>
+        <p>...hear what our customers have to say!</p>
+        <div class="testimonials-wrapper"></div>
+          <?php echo do_shortcode('[sp_testimonial id="1144"]'); ?>
+        </div>
+      </div>
+
+  </section>
+
   <!-- Contact Us -->
   <section id="contact-us" class="padded container-fluid" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/buildings.png);">
     <div class="container">
