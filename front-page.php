@@ -124,7 +124,7 @@
         <h2 class="title">Don't just take it from us...</h2>
         <p>...hear what our customers have to say!</p>
         <div class="testimonials-wrapper"></div>
-          <?php echo do_shortcode('[sp_testimonial id="1144"]'); ?>
+          <?php echo do_shortcode('[sp_testimonial id="57"]'); ?>
         </div>
       </div>
 
@@ -137,7 +137,7 @@
         <p class="lead primary">Contact Us</p>
         <h2 class="title">Don't wait, reach out today.</h2>
         <p>Have questions or need an estimate? We're here for you!</p>
-        <?php echo do_shortcode('[wpforms id="1080"]'); ?>
+        <?php echo do_shortcode('[wpforms id="43"]'); ?>
       </div>
     </div>
   </section>

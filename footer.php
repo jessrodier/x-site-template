@@ -16,7 +16,7 @@
         <div class="col-12 col-sm-6 col-md-3 mb-4">
           <h5>Contact Info</h5>
           <p><strong>Main Office:</strong></p>
-          <p>Worcester, MA</p>
+          <p>Leicester, MA</p>
           <p class="mt-4"><strong>Phone:</strong></p>
           <p><a href="tel:1-833-483-7322">1-833-HUD-REAC</a></p>
           <p class="mt-4"><strong>Email:</strong></p>
